@@ -295,10 +295,10 @@ The rover body has been 3D Printed. The first prototype is shown below.
 **Figure 5.2.9.1 Body Design**
 
 ![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.029.png)
+
 **Figure 5.2.9.2 Rover Top View**
 
-![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.030.png)**
-
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.030.png)
 
 **Figure 5.2.9.3 Rover Side View**
 
