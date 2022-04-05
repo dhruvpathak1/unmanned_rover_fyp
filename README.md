@@ -40,7 +40,7 @@ The camera Module integrated with the Raspberry Pi feeds videos (or images as fr
 
 Serial communication is a type of communication which sends and receives data via a one or two transmission line system, with data being transmitted and received one bit at a time. Serialization of the Pi and Uno is an important feature that allows you to get the most out of both boards.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.001.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.001.png)
 
 **Figure 1.2.1 Serialization Demonstration**
 
