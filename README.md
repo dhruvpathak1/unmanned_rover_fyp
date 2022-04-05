@@ -70,26 +70,26 @@ The UGV  has a simple design and can be deployed for a variety of applications l
 
 1. **Supported Operating System**
 
-\1. Raspberry Pi OS 
+   1. Raspberry Pi OS 
 
-\2. Raspberry Pi OS Lite 
+   2. Raspberry Pi OS Lite 
 
-\3. RISC OS Pi etc. 
+   3. RISC OS Pi etc. 
 
 1. **Hardware Requirements**
 
 Raspberry Pi, Arduino Uno, Camera, Gyroscope, Breadboard, Jumper Wires (MF, MM and FF), Multi-meter, Display Screen, HDMI Cord, Micro USB, Keyboard, Mouse, DC Motor, GPS, Sensor, Ultrasonic Sensor, Servo Motor, Density, Humidity and Temperature sensor, Air Quality sensor etc.
 
-1. **Software Requirements**
-1. Arduino IDE
-1. Python
-1. Google Firebase
-1. HTML
-1. CSS
-1. Javascript
-1. C++
+2. **Software Requirements**
+   Arduino IDE
+   Python
+   Google Firebase
+   HTML
+   CSS
+   Javascript
+   C++
 
-1. **Compatibility Requirements**
+3. **Compatibility Requirements**
 
 PC: Windows® operating system, versions 10 Build 10240 or higher 
 
@@ -102,7 +102,6 @@ Python Version: 3.9
 Pip Version: 21.1.2
 
 C++: 14
-
 
 
 **Chapter 2: METHODS IMPLEMENTED**
@@ -121,13 +120,13 @@ Networking and connectivity forms a very important aspect of the project as the 
 
 Optimal Mobile Sink Selection Algorithm (OMSS):
 
-\1. It is always striving to improve network stability and, as a result, reduce the frequency of topology reconfiguration in a regulated manner.
+ 1. It is always striving to improve network stability and, as a result, reduce the frequency of topology reconfiguration in a regulated manner.
 
-\2. It can compute a value known as the Connection Expiration Time (CET). CET is the amount of time that a sensor node may be reliably connected.
+ 2. It can compute a value known as the Connection Expiration Time (CET). CET is the amount of time that a sensor node may be reliably connected.
 
 1. **Architecture Diagrams**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.002.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.002.png)
 
 **Figure 4.2 Architecture Diagram**
 
@@ -135,13 +134,13 @@ Optimal Mobile Sink Selection Algorithm (OMSS):
 
 Fig. 4.3.1 tells us about the connections on the motor shield which is connected on the Arduino Uno. There are 4 motors which will help the Unmanned Ground Vehicle to move and an extra servo motor connection. This is also powered by a 5 to 9 volt battery with an on-off switch.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.003.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.003.png)
 
 **Figure 4.3.1 Arduino Design Diagram**
 
 The Fig. 4.3.2 tells us about the connections on the Raspberry Pi, there are 3 sensors connected on the board. A Gyroscope, ultrasonic sensor and a Pi Camera are connected on the board.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.004.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.004.png)
 
 **Figure 4.3.2 Rover Design Diagram**
 
@@ -158,11 +157,11 @@ The web application displays the following modules:
 - **Semi-Automation:** One can click the semi-automation button to enter semi-automatic mode. In this mode, the data collected by the ultrasonic sensor in front of the rover can be used by the UGV to navigate in the immediate vicinity. The Raspberry Pi processes the data from the sensor and then guides the rover forward to avoid obstacles along the way.
 - **Navigation Module:** The navigation module consists of four buttons. One is for driving forward, the second is for driving to the right, the third is for driving to the left, and the fourth is for driving backward. These buttons allow the user to navigate  around the rover. On clicking the forward button, the Arduino commands all  four DC motors to rotate in the forward direction. The reverse button works as well, with all  four wheels rotating in the reverse direction. The button on the left rotates the motor on the right side of the rover forward when the motor on the left side is stationary. When the user clicks the right button, the motor on the left side of the rover rotates forward and the motor on the right side comes to rest.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.005.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.005.png)
 
 **Figure 5.1.1.1 Web Application Snapshot**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.006.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.006.png)
 
 **Figure 5.1.1.2 Road Quality Assessment**
 
@@ -174,34 +173,34 @@ The web application displays the following modules:
 
 Serialization on the Raspberry Pi.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.008.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.008.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.009.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.009.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.010.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.010.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.011.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.011.png)
 
 **5.1.2 Uploading Data to Firebase**
 
 Google Firebase is a Google-backed application development software that enables developers to store real-time data on the cloud. To send data from the Raspberry Pi to our Firebase cloud storage, the following code is executed.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.012.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.012.png)
 
 1. **Hardware Implementation**
 1. **Gyroscope**
 
 The gyroscope or MPU6050 is a Micro Electro-Mechanical Systems (MEMS) with a 3-axis accelerometer and 3-axis gyroscope. This allows us to measure a system's or object's acceleration, velocity, direction, displacement etc. 
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.013.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.013.png)
 
 **Figure 5.2.1.1 Gyroscope Working**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.014.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.014.png)
 
 **Output**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.015.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.015.png)
 
 **Figure 5.2.1.3 Gyroscope Output**
 
@@ -213,15 +212,15 @@ The Raspberry Pi Camera Board is a custom-designed Raspberry Pi add-on module. I
 
 After enabling the Camera interface on the Raspberry Pi and checking its working using *“raspistill”*, we execute the following code to live stream on port 8000.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.016.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.016.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.017.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.017.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.018.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.018.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.019.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.019.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.020.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.020.png)
 
 The "StreamingOutput" Python class offers two methods for initialising and outputting the buffered frames. Aside from the aforesaid class, we define various others like "StreamingHandler" and "StreamingServer." The streaming handler keeps the live stream going by sending HTTP requests and picture data. Streaming Server keeps the server function running in the network and threading active.
 
@@ -237,13 +236,13 @@ The "StreamingOutput" Python class offers two methods for initialising and outpu
 
 Using an Arduino and the Arduino Motor Shield, you can simply control motor direction and speed. It's quite simple to incorporate a motor into your project because you can just address Arduino pins. It also enables you to run a motor from a separate power supply of up to 12V. A DC motor is the most common type of motor. There are only two leads in most DC motors: one positive and one negative. If these two lines are linked directly to a battery, the motor will spin. If the leads are switched, the motor will rotate in the opposite direction.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.021.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.021.png)
 
 **Figure 5.2.3.1 Hobby Motor Setup**
 
 The hobby motors are controlled as a 4-wheel drive for the rover. With different combinations of all 4 motors controlled, we have established the 4 basic movements to move forward, backward, left and right. The code for the execution is shown below.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.022.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.022.png)
 
 **3.1 Serial Commands for DC Motor** 
 
@@ -261,7 +260,7 @@ The LiPo battery in the rover produces a higher amount of voltage than the requi
 
 An ultrasonic sensor is a device that uses ultrasonic sound waves to determine the distance between two objects. An ultrasonic sensor employs a transducer to emit and receive ultrasonic pulses that communicate information about the proximity of an item. High-frequency sound waves bounce off boundaries, resulting in different echo patterns.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.023.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.023.png)
 
 **Figure 5.2.6.1 Ultrasonic Working**
 
@@ -269,9 +268,9 @@ Ultrasonic sensors work by generating a sound wave at a frequency that is above 
 
 The code to find the distance based on the sonic waves is shown below. The output from this code is also attached below.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.024.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.024.png)
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.025.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.025.png)
 
 **Figure 5.2.6.3 Ultrasonic Output**
 
@@ -279,31 +278,31 @@ The code to find the distance based on the sonic waves is shown below. The outpu
 
 The DHT11 is a low-cost digital sensor that measures temperature and humidity. This sensor is simple to connect to any microcontroller. The code for it is provided below.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.026.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.026.png)
 
 1. **Air Quality Sensor (MQ135)**
 
 The MQ135 air quality sensor detects a wide variety of gases, including NH3, alcohol, benzene, smoke, and carbon dioxide. The MQ135 gas sensor is extremely sensitive to ammonia and sulphide, as well as smoke and other hazardous gases. It comes at a modest price.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.027.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.027.png)
 
 1. **Body Frame**
 
 The rover body has been 3D Printed. The first prototype is shown below.
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.028.jpeg)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.028.jpeg)
 
 **Figure 5.2.9.1 Body Design**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.029.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.029.png)
 **Figure 5.2.9.2 Rover Top View**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.030.png)**
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.030.png)**
 
 
 **Figure 5.2.9.3 Rover Side View**
 
-![](Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.031.png)
+![](Images/Aspose.Words.2f504bcd-eb5e-477b-b364-8715c865f100.031.png)
 
 **Figure 5.2.9.4 Rover Front View**
 
